@@ -9,7 +9,7 @@ public class CelestialApplication {
         window.setResizable(false);
         window.setTitle("Celestial Adventure");
 
-        gamePanel gamePanel = new gamePanel();
+        GamePanel gamePanel = new GamePanel();
         window.add(gamePanel);
 
         window.pack();
