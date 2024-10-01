@@ -1,5 +1,6 @@
 package entity;
 
+import assets.player.Entity;
 import main.GamePanel;
 import main.KeyHandler;
 
@@ -8,10 +9,9 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Objects;
 import java.util.logging.Logger;
 
-public class Player extends Entity{
+public class Player extends Entity {
     private static final Logger LOGGER = Logger.getLogger(Player.class.getName());
     GamePanel gamePanel;
     KeyHandler keyHandler;
@@ -36,14 +36,14 @@ public class Player extends Entity{
     public void getPlayerImage() {
         try {
 
-            up1 = loadImage("/assets/Blossom_up_1.png");
-            up2 = loadImage("/assets/Blossom_up_2.png");
-            down1 = loadImage("/assets/Blossom_down_1.png");
-            down2 = loadImage("/assets/Blossom_down_2.png");
-            left1 = loadImage("/assets/Blossom_left_1.png");
-            left2 = loadImage("/assets/Blossom_left_2.png");
-            right1 = loadImage("/assets/Blossom_right_1.png");
-            right2 = loadImage("/assets/Blossom_right_2.png");
+            up1 = loadImage("/assets/player/Blossom_up_1.png");
+            up2 = loadImage("/assets/player/Blossom_up_2.png");
+            down1 = loadImage("/assets/player/Blossom_down_1.png");
+            down2 = loadImage("/assets/player/Blossom_down_2.png");
+            left1 = loadImage("/assets/player/Blossom_left_1.png");
+            left2 = loadImage("/assets/player/Blossom_left_2.png");
+            right1 = loadImage("/assets/player/Blossom_right_1.png");
+            right2 = loadImage("/assets/player/Blossom_right_2.png");
 
         } catch (IOException e) {
             LOGGER.severe("Error loading player images: " + e.getMessage());
