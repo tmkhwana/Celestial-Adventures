@@ -1,4 +1,4 @@
-package entity;
+package assets.player;
 
 import java.awt.image.BufferedImage;
 
